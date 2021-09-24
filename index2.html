@@ -1,0 +1,982 @@
+<!-- This page is entirely same as index.html.
+It just displays My playlist section in place of queue.
+It uses the same stylesheets and everything else is identical. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- This meta tag has been added to prevent viewing the webpage in landscape mode. -->
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <!-- The first and main stylesheet -->
+
+  <link rel="stylesheet" href="Assets/styles.css">
+  <link rel="stylesheet" href="Assets/queueresponsive.css">
+  <!-- The stylesheet with all the media queries for the main home page. -->
+  <link rel="stylesheet" href="Assets/responsive.css">
+  <!-- Font-Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Newsreader&family=Padauk&family=Playfair+Display&family=Roboto+Slab&family=Source+Sans+Pro:wght@200&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=PT+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <!-- Title of webpage -->
+  <title>SoundOne Studio</title>
+</head>
+
+<body>
+  <!-- Top navigation bar -->
+  <div class="navigation-bar">
+    <div class="player-title">
+      <img class="logo" src="Assets/images/main logo.png" alt="">
+      <div class="website-name"><span class="special">SOUND</span> <span class="special-1">ONE</span><br />Music Studio
+      </div>
+    </div>
+    <div class="search">
+      <input class="searchbar" type="text" placeholder=" 🔍  Search">
+      <div class="mic-icon">
+        <i class="mic fas fa-microphone"></i>
+      </div>
+    </div>
+    <div class="notification">
+      <i class="bell far fa-bell"></i>
+    </div>
+    <div class="user">
+      <div class="user-name">Hi, Sajal Aggarwal!</div>
+      <img class="profile" src="Assets/images/profile.jpeg" alt="cannot load">
+    </div>
+  </div>
+  <!-- End of navigation-bar -->
+  <!-- Aside-section-1 -->
+  <aside class="section-1">
+    <!-- Carousel -->
+    <div class="container">
+      <input type="radio" name="slider" id="item-1" checked>
+      <input type="radio" name="slider" id="item-2">
+      <input type="radio" name="slider" id="item-3">
+      <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+          <img class="carousel-image" src="Assets/english songs/loved by you.jpeg" alt="song">
+        </label>
+        <label class="card" for="item-2" id="song-2">
+          <img class="carousel-image" src="Assets/english songs/dynamite.jpeg" alt="song">
+        </label>
+        <label class="card" for="item-3" id="song-3">
+          <img class="carousel-image" src="Assets/images/music posters/casanova.jpg" alt="song">
+        </label>
+      </div>
+    </div>
+
+    <!-- Latest-releases section -->
+    <p class="latest-release-container-title">
+      Latest Releases
+    </p>
+    <div class="latest-release">
+      <div class="latest-card">
+        <div class="dropdown-1">
+          <i class=" dropdown-button fas fa-ellipsis-h"></i>
+          <div class="dropdown-content-1">
+            <a href="finalzayn.html"><i class="fas fa-play"></i>&nbsp;&nbsp;Play Now</a>
+            <a href="#queue"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add to Queue</a>
+            <a href="#"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;Get Info</a>
+          </div>
+        </div>
+        <img class="fav-img" src="Assets/images/music posters/casanova.jpg" alt="">
+        <span class="latest-title">Casanova<br />
+          <br /> 08 January 2021 </span>
+      </div>
+      <div class="latest-card">
+        <div class="dropdown-1">
+          <i class=" dropdown-button fas fa-ellipsis-h"></i>
+          <div class="dropdown-content-1">
+            <a href="finalzayn.html"><i class="fas fa-play"></i>&nbsp;&nbsp;Play Now</a>
+            <a href="#queue"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add to Queue</a>
+            <a href="#"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;Get Info</a>
+          </div>
+        </div>
+        <img class="fav-img" src="Assets/hindi song posters/mazaa.jpeg" alt="">
+        <span class="latest-title"><b>Mazaa</b><br />
+          <br /> 11 October 2021 </span>
+      </div>
+      <div class="latest-card">
+        <div class="dropdown-1">
+          <i class=" dropdown-button fas fa-ellipsis-h"></i>
+          <div class="dropdown-content-1">
+            <a href="finalzayn.html"><i class="fas fa-play"></i>&nbsp;&nbsp;Play Now</a>
+            <a href="#queue"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add to Queue</a>
+            <a href="#"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;Get Info</a>
+          </div>
+        </div>
+        <img class="fav-img" src="Assets/english songs/Sour.jpeg" alt="">
+        <span class="latest-title">Sour<br />
+          <br /> 07 April 2021 </span>
+      </div>
+      <div class="latest-card">
+        <div class="dropdown-1">
+          <i class=" dropdown-button fas fa-ellipsis-h"></i>
+          <div class="dropdown-content-1">
+            <a href="finalzayn.html"><i class="fas fa-play"></i>&nbsp;&nbsp;Play Now</a>
+            <a href="#queue"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add to Queue</a>
+            <a href="#"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;Get Info</a>
+          </div>
+        </div>
+        <img class="fav-img" src="Assets/english songs/safari.jpeg" alt="">
+        <span class="latest-title">Safari<br />
+          <br /> 19 June 2021 </span>
+      </div>
+      <div class="latest-card">
+        <div class="dropdown-1">
+          <i class=" dropdown-button fas fa-ellipsis-h"></i>
+          <div class="dropdown-content-1">
+            <a href="finalzayn.html"><i class="fas fa-play"></i>&nbsp;&nbsp;Play Now</a>
+            <a href="#queue"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add to Queue</a>
+            <a href="#"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;Get Info</a>
+          </div>
+        </div>
+        <img class="fav-img" src="Assets/english songs/intentions.jpg" alt="">
+        <span class="latest-title">Intentions<br />
+          <br /> 15 July 2021 </span>
+      </div>
+      <div class="latest-card">
+        <div class="dropdown-1">
+          <i class=" dropdown-button fas fa-ellipsis-h"></i>
+          <div class="dropdown-content-1">
+            <a href="finalzayn.html"><i class="fas fa-play"></i>&nbsp;&nbsp;Play Now</a>
+            <a href="#queue"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add to Queue</a>
+            <a href="#"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;Get Info</a>
+          </div>
+        </div>
+        <img class="fav-img" src="Assets/english songs/panda.jpeg" alt="">
+        <span class="latest-title">Panda<br />
+          <br /> 01 August 2021 </span>
+      </div>
+    </div>
+    <!-- Popular artists section -->
+    <p class="popular-artists-container-title">
+      Popular Artists
+    </p>
+    <div class="popular-artists">
+      <div class="popular-artist-card">
+        <img class="popular-artists-image margin-left-1" src="Assets/images/musicians/selena.jpg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Selena Gomez</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/zayn malik images/zayn3.png" alt="">
+        <label for="music" class="music-label"><a href="finalzayn.html"><i
+              class=" play-circular  fas fa-play"></i></a></label><span class="popular-artist-name">Zayn Malik</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/justin.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Justin Bieber</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/taylor swift.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Taylor Swift</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/rihanna.jpg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Rihanna</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/papon.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Papon</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/bappi.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Bappi Lehri</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/nehakakkar.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Neha Kakkar</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/justin timberlake.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Justin Timberlake</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/bruno.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Bruno Mars</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/britney spears.jpeg" alt="">
+        <label for="music " class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Britney Spears</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="popular-artists-image" src="Assets/images/musicians/akhil.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label><span
+          class="popular-artist-name">Akhil Sachdeva</span>
+      </div>
+    </div>
+    <div id="radios">
+      <div class="radio-card">
+        <img class="radio-stations" src="Assets/images/themes/stations.png" alt="">
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/romance.jpeg" alt="">
+        <p class="radio-name-tag">
+          Love
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/workout.jpeg" alt="">
+        <p class="radio-name-tag">
+          Workout
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/hiphop.jpeg" alt="">
+        <p class="radio-name-tag">
+          Hiphop
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/retro.jpeg" alt="">
+        <p class="radio-name-tag">
+          Retro
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/rock.jpeg" alt="">
+        <p class="radio-name-tag">
+          Rock
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/techno.jpeg" alt="">
+        <p class="radio-name-tag">
+          Techno
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/chill.jpeg" alt="">
+        <p class="radio-name-tag">
+          Chill
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/funk.jpeg" alt="">
+        <p class="radio-name-tag">
+          Funk
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/pop.jpeg" alt="">
+        <p class="radio-name-tag">
+          Pop
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/jazz.jpeg" alt="">
+        <p class="radio-name-tag">
+          Jazz
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/hardcore.jpeg" alt="">
+        <p class="radio-name-tag">
+          Hardcore
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/devotional.jpeg" alt="">
+        <p class="radio-name-tag">
+          Devotional
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/acoustic.jpeg" alt="">
+        <p class="radio-name-tag">
+          Acoustic
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/sufi.jpeg" alt="">
+        <p class="radio-name-tag">
+          Sufi
+        </p>
+      </div>
+      <div class="radio-card"><img class="radio-image" src="Assets/images/themes/patriotic.jpeg" alt="">
+        <p class="radio-name-tag">
+          Patriotic
+        </p>
+      </div>
+    </div>
+    <div id="genres">
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/electronic.jpeg" alt="">
+        <p class="radio-name-tag">
+          Electronic
+        </p>
+      </div>
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/disco.jpeg" alt="">
+        <p class="radio-name-tag">
+          Party
+        </p>
+      </div>
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/road trip.jpeg" alt="">
+        <p class="radio-name-tag">
+          Road Trip
+        </p>
+      </div>
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/inspirational.jpeg" alt="">
+        <p class="radio-name-tag">
+          Motivational
+        </p>
+      </div>
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/meditation.jpeg" alt="">
+        <p class="radio-name-tag">
+          Meditation
+        </p>
+      </div>
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/breakup.jpeg" alt="">
+        <p class="radio-name-tag">
+          Breakup
+        </p>
+      </div>
+      <div class="genre-card">
+        <img class="genre-image" src="Assets/images/themes/morning.jpeg" alt="">
+        <p class="radio-name-tag">
+          Morning
+        </p>
+      </div>
+    </div>
+    <p class="latest-container-title">
+      Trending in English
+    </p>
+    <div id="latest-songs">
+      <div class="popular-artist-card">
+        <img class="margin-left-1 latest-image" src="Assets/english songs/Me by Taylor swift.png" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Me!</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/Run by one republic.png" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Run</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/kiss me more.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Kiss Me More</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/save your tears.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Save your Tears</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/your power by billie.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Your Power</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/electric.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Electric</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/hear me say.png" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Hear me Say</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/justice.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Justice</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/revelacion.png" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Revelacion</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/too bizarre.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Too Bizarre</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/Mirror.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Mirror</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/sorry.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Sorry</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/el pony.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">El Pony</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/call me cruella.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Call me Cruella</span>
+      </div>
+    </div>
+    <p class="latest-container-title">
+      Latest in Hindi
+    </p>
+    <div id="latest-songs" class="hindi">
+      <div class="popular-artist-card">
+        <img class="margin-left-1 latest-image" src="Assets/hindi song posters/mazaa.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Mazaa</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/nadiyon paar.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Nadiyon Paar</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/radha.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Radha</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/shola.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Shola</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/thoda thoda pyar.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Thoda Thoda Pyaar</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/zoom zoom.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Zoom Zoom</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/pagglait.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Pagglait</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/the big bull.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">The Big Bull</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/queue images/ae dil hai mushkil.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Channa Mereya</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/broken.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Mere Liye</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/queue images/dilwale.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Janam Janam</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image"
+          src="Assets/hindi song posters/sardar.zw1zlxbyzc1hc3nldhmvbw92awvzl2jlm2yzmzq1ltljywmtndflys04yjrhltjmntbmzja4m2y3oc5qcgc="
+          alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Bandeya</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/queue images/sanju.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Kar Har Maidan Fateh</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/hindi song posters/dil hai deewana.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Dil hai Deewana</span>
+      </div>
+    </div>
+    <p class="bollywood-stars-container-title">
+      Bollywood Stars
+    </p>
+    <div id="bollywood-stars">
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image margin-left-1" src="Assets/images/bollywood stars/shahrukh.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Shahrukh Khan</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/aishwarya.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Aishwarya Rai</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/tiger.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Tiger Shroff</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/varun.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Varun Dhawan</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/bhumi.webp" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Bhumi Pednekar</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/vidyut.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Vidyut Jammwal</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/salman.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Salman Khan</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/vicky.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Vicky Kaushal</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/alia.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Alia Bhatt</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/Aditya.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Aditya Roy Kapur</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/siddharth.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Siddharth Malhotra</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/kartik .webp" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Kartik Aaryan</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/bollywood stars/sushant1.png" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Sushant Singh Rajput</span>
+      </div>
+
+    </div>
+    <p class="bollywood-stars-container-title">
+      Hollywood Stars
+
+    </p>
+    <div id="bollywood-stars">
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image margin-left-1" src="Assets/images/hollywood stars/brad pitt.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Brad Pitt</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/emma stone.jpg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Emma Stone</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/jenifer.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Jennifer Aniston</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/tom cruise.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Tom cruise</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/leonardo.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Leonardo Di Caprio</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/liam hemsworth.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Liam Hemsworth</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/angelina jolie.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Angelina Jolie</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/benedict.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Benedict Cumbermatch</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/kristen stewart.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Kristen Stewart</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/robert pattinson.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Robert Pattinson</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="popular-artists-image" src="Assets/images/hollywood stars/sophie.jpeg" alt="">
+        <label for="music" class="music-label"><i class=" play-circular  fas fa-play"></i></label>
+        <span class="popular-artist-name">Sophie Turner</span>
+      </div>
+
+    </div>
+    <p class="latest-container-title">
+      Trending in EDM
+    </p>
+    <div id="latest-songs">
+      <div class="popular-artist-card">
+
+        <img class="latest-image margin-left-1" src="Assets/images/edm/acres.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Acres
+        </span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/images/edm/drivin thru the night.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Drivin' Thru the Night</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/images/edm/galantis.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Galantis</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/images/edm/love line.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Love Line</span></span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/images/edm/outta my head.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Outta my Head</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/images/edm/stars align.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Stars Align</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/images/edm/superman.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Superman</span>
+      </div>
+
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/images/edm/yours.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Yours</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/revelacion.png" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Revelacion</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/too bizarre.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Too Bizarre</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/Mirror.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Mirror</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/sorry.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Sorry</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/el pony.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">El Pony</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/english songs/call me cruella.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Call me Cruella</span>
+      </div>
+    </div>
+    <p class="latest-container-title">
+      Top Albums
+    </p>
+    <div id="latest-songs">
+      <div class="popular-artist-card">
+
+        <img class="latest-image margin-left-1" src="Assets/Top Albums/Ludo.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Ludo
+        </span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/Top Albums/Kabir Singh.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Kabir Singh</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/Top Albums/Luka Chuppi.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Luka Chuppi</span></span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/Top Albums/Malang.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Malang</span></span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/Top Albums/Dil Bechara.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Dil Bechara</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/Top Albums/Saina.webp" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Saina</span>
+      </div>
+      <div class="popular-artist-card">
+
+        <img class="latest-image" src="Assets/Top Albums/Radhe.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Radhe</span>
+      </div>
+
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/Top Albums/Love aaj Kal.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Love Aaj Kal</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/Top Albums/Sultan.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Malang</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/Top Albums/Raabta.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Raabta</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/Top Albums/Dangal.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Dangal</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/Top Albums/Chhichhore.jpeg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Chhichhore</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image"
+          src="Assets/Top Albums/Meri Pyari Bindu.zw1zlxbyzc1hc3nldhmvbw92awvzl2qzowizymrilwnlywitndq2zc1iodbjlwm1mdhjzdkzodg1zc53zwjw"
+          alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">Meri Pyaari Bindu</span>
+      </div>
+      <div class="popular-artist-card">
+        <img class="latest-image" src="Assets/Top Albums/war.jpg" alt="">
+        <label for="music" class="music-label"><i class="play fas fa-play"></i></label>
+        <span class="popular-artist-name">War</span>
+      </div>
+    </div>
+  </aside>
+  <label for="queue-show">
+    <div class="show-left ">Queue</div>
+  </label>
+  <input type="checkbox" id="queue-show">
+
+  <aside class="section-2">
+    <div id="queue">
+      <p class="queue-title">
+        My Playlist
+      </p>
+      <div class="dropdown">
+        <i class=" dropdown-button far fa-caret-square-down"></i>
+        <div class="dropdown-content">
+          <a href="index.html">Queue</a>
+          <a href="#genres">Favourite Songs</a>
+          <a href="#queue">My Playlist</a>
+        </div>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">01</span>
+        <label for="music"><img class="queue-image" src="Assets/Top Albums/Dil Bechara.jpeg" alt=""></label>
+        <span class="queue-song-names">Dil Bechara <br><span class="queue-singer">A.R. Rahman</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">02</span>
+        <label for="music"><img class="queue-image" src="Assets/images/zayn malik images/Riverroad.jpeg" alt=""></label>
+        <span class="queue-song-names">River Road<br><span class="queue-singer">Zayn</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">03</span>
+        <label for="music"><img class="queue-image" src="Assets/images/zayn malik images/Better.jpeg" alt=""></label>
+        <span class="queue-song-names">Better<br><span class="queue-singer">Zayn</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">04</span>
+        <label for="music"><img class="queue-image" src="Assets/images/zayn malik images/Befour.jpeg" alt=""></label>
+        <span class="queue-song-names">Befour<br><span class="queue-singer">Zayn</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">05</span>
+        <label for="music"><img class="queue-image" src="Assets/images/zayn malik images/flames.png" alt=""></label>
+        <span class="queue-song-names">Flames<br><span class="queue-singer">Zayn</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">06</span>
+        <label for="music"><img class="queue-image" src="Assets/english songs/Run by one republic.png" alt=""></label>
+        <span class="queue-song-names">Run<br><span class="queue-singer">One Republic</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">07</span>
+        <label for="music"><img class="queue-image" src="Assets/english songs/sorry.jpeg" alt=""></label>
+        <span class="queue-song-names">Sorry<br><span class="queue-singer">Justin Bieber</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">08</span>
+        <label for="music"><img class="queue-image" src="Assets/hindi song posters/nadiyon paar.jpeg" alt=""></label>
+        <span class="queue-song-names">Nadiyon Paar<br><span class="queue-singer">Sachin-Jigar</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">09</span>
+        <label for="music"><img class="queue-image" src="Assets/hindi song posters/radha.jpeg" alt=""></label>
+        <span class="queue-song-names">Radha<br><span class="queue-singer">Dhvani Bhanushali</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">10</span>
+        <label for="music"><img class="queue-image" src="Assets/hindi song posters/mazaa.jpeg" alt=""></label>
+        <span class="queue-song-names">Mazaa<br><span class="queue-singer">B Praak</span></span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">11</span>
+        <label for="music"><img class="queue-image" src="Assets/images/music posters/casanova.jpg" alt=""></label>
+        <span class="queue-song-names">Casanova<br><span class="queue-singer">Tiger Shroff</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">12</span>
+        <label for="music"><img class="queue-image" src="Assets/english songs/revelacion.png" alt=""></label>
+        <span class="queue-song-names">Revelacion<br><span class="queue-singer">Selena Gomez</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">13</span>
+        <label for="music"><img class="queue-image" src="Assets/english songs/Me by Taylor swift.png" alt=""></label>
+        <span class="queue-song-names">Me!<br><span class="queue-singer">Taylor Swift</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">14</span>
+        <label for="music"><img class="queue-image" src="Assets/hindi song posters/broken.jpeg" alt=""></label>
+        <span class="queue-song-names">Tere Naal<br><span class="queue-singer">Akhil Sachdeva</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+      <div class="queue-song">
+        <span class="queue-numbers">15</span>
+        <label for="music"><img class="queue-image"
+            src="Assets/hindi song posters/sardar.zw1zlxbyzc1hc3nldhmvbw92awvzl2jlm2yzmzq1ltljywmtndflys04yjrhltjmntbmzja4m2y3oc5qcgc="
+            alt=""></label>
+        <span class="queue-song-names">Bandeya<br><span class="queue-singer">Divya Kumar</span></span>
+        <i class="like-icon far fa-heart"></i>
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <input type="checkbox" id="music">
+    <div id="bottom-player">
+      <div class="song-description">
+        <div class="song-description-image">
+          <img src="Assets/images/zayn malik images/fingers.jpeg" alt="">
+        </div>
+        <div class="song-description-name">
+          Fingers<br />Zayn
+        </div>
+      </div>
+      <div class="main-player">
+        <div class="controls">
+          <i class="shuffle fas fa-random"></i>
+          <i class="backward fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="forward fas fa-step-forward"></i>
+          <i class="replay fas fa-redo"></i>
+        </div>
+        <div class="slider">
+          <input type="range" min="0" max="100" value="0" class="slider">
+        </div>
+      </div>
+      <div class="extras">
+        <div class="controls">
+          <i class="show-queue far fa-list-alt"></i>
+          <i class="laptop fas fa-laptop"></i>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="volume-slider">
+          <input type="range" min="0" max="20" value="0" class="slider">
+        </div>
+      </div>
+    </div></input>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,653 @@
+/*CSS styling for single artist Zayn malik webpage*/
+/*Setting the universal properties of the page*/
+/*We have set  all margins and padding values to zero initially so that we can
+ourselves specify those values for all elements and the default values do not
+interfere.*/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgb(14, 16, 37);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*Topmost-portion:Navigation bar*/
+/*The navigation bar has been designed using flex display to support
+responsiveness. The space between the different components has been kept equal.*/
+.navigation-bar {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*First subdiv-name and logo of player*/
+.player-title {
+  position: relative;
+  left: 3%;
+  width: 23%;
+  min-width: 140.5px;
+  min-height: 92px;
+}
+
+/*Logo*/
+.logo {
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*Name*/
+.website-name {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.special {
+  font-family: 'Secular One', sans-serif;
+}
+
+.special-1 {
+  color: rgb(195, 145, 109);
+}
+
+/*Second sub-div: Search bar*/
+.search {
+  display: inline-block;
+  width: 30%;
+  min-width: 156px;
+  min-height: 29px;
+}
+
+/*Search-bar*/
+.searchbar {
+  display: inline-block;
+  width: 93%;
+  height: 35px;
+  background-color: rgb(20, 25, 60);
+  border-radius: 18px;
+  border: 1px solid rgb(20, 25, 60);
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/*Mic-icon(voice search) div*/
+.mic-icon {
+  display: inline-block;
+  position: relative;
+  width: min-content;
+  right: 0%;
+  top: 10%;
+  transition: all ease-in-out 0.1s;
+}
+
+/*Mic icon*/
+.mic {
+  left: -25px;
+  top: -12px;
+  color: white;
+  position: absolute;
+}
+
+/*Third sub-div: Notifications*/
+.notification {
+  display: inline-block;
+  width: 1%;
+}
+
+/*Notification-bell-icon*/
+.bell {
+  color: white;
+  font-size: 30px;
+}
+
+/*Fourth sub-div: User*/
+.user {
+  display: inline-block;
+  width: 20%;
+}
+
+/*User-Name*/
+.user-name {
+  vertical-align: middle;
+  font-size: 1.3rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+}
+
+/*User-profile-picture*/
+.profile {
+  height: 35px;
+  width: 34px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+/*End of fourth-subdiv*/
+/*!!!!!!!End of navigation bar!!!!!!!!!*/
+/*Beginning of Aside section-1*/
+.section-1 {
+  width: 70%;
+  display: inline-block;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.zayn-malik {
+  background-color: rgb(22, 27, 63);
+  width: 90%;
+  height: 48%;
+  min-height: 300px;
+  min-width: 275px;
+  position: relative;
+  left: 6%;
+  border: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/*General image attributes*/
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*Main image of artist*/
+.zayn-image {
+  height: 100%;
+  width: 34%;
+  opacity: 0.8;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+}
+
+/*Heading - Name of artist*/
+.heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-family: 'Newsreader', serif;
+  letter-spacing: 0.9px;
+}
+
+/*Brief History of artist*/
+.zayn-text {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  right: 8%;
+  color: white;
+  text-align: justify;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.play-now {
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
+  font-size: 1.1rem;
+  width: 25%;
+  height: 12%;
+  background: linear-gradient(90deg, rgb(53, 37, 165), rgb(174, 78, 214));
+  border: 0;
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  padding: 5px 15px 5px 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.play-now:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.play-now-show:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.general {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 82%;
+  font-family: 'Noto Sans SC', sans-serif;
+  letter-spacing: 0.8px;
+  font-size: 0.9rem;
+}
+
+.general:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.songs {
+  background-color: rgb(27, 30, 49);
+  width: 90%;
+  top: 3%;
+  margin-top: 2%;
+  height: 80px;
+  min-width: 275px;
+  position: relative;
+  left: 6%;
+  border: 0;
+}
+
+.song-numbers {
+  color: white;
+  position: relative;
+  bottom: 36%;
+  left: 6px;
+  margin-right: 2px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.songs:hover {
+  background-color: rgb(30, 33, 58);
+  cursor: pointer;
+}
+
+.songs-div {
+  overflow-x: visible;
+  overflow-y: hidden;
+  white-space: nowrap;
+  min-width: 290px;
+}
+
+.icons {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  color: white;
+}
+
+.like {
+  margin-left: 20px;
+}
+
+.song-name {
+  color: white;
+  position: relative;
+  left: 5%;
+  bottom: 38%;
+  font-size: 1.1rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.song-images {
+  min-width: 50px;
+  height: 84%;
+  width: 9%;
+  border-radius: 0;
+  margin-top: 0.8%;
+  margin-left: 2%;
+  min-height: 70px;
+}
+
+/*End of section-1*/
+/*Aside section-2*/
+/*Similar functionality as used in index.html*/
+.section-2 {
+  width: 28%;
+  display: inline-block;
+  height: 90vh;
+  overflow: hidden;
+  vertical-align: top;
+  border-radius:10px;
+}
+
+@media screen and (max-width:880px) {
+  .section-2 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  input[type=checkbox]:checked~.section-2 {
+    visibility: visible;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    opacity: 0.9;
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 83%;
+  }
+}
+
+#queue {
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 39vh;
+}
+
+.queue-title {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.queue-song {
+  display: flex;
+  margin: 12px;
+  position: relative;
+  top: -5%;
+}
+
+.queue-numbers {
+  color: white;
+  margin-top: 40px;
+  margin-right: 11px;
+  font-family: 'Playfair Display', serif;
+}
+
+.queue-image {
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+}
+
+.queue-song-names {
+  color: white;
+  margin-top: 29px;
+  margin-left: 16px;
+  font-weight: bolder;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+.queue-singer {
+  color: white;
+  margin: auto;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.like-icon {
+  color: white;
+  position: absolute;
+  left: 90%;
+  top: 63%;
+}
+
+.like-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  left: 87%;
+  top: -7%;
+}
+
+.dropdown-button {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+  top: -134%;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: rgb(242, 242, 242);
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  left: auto !important;
+  top: 0;
+  right: 95%;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  color: grey;
+  display: none;
+  opacity: 0.95;
+  border: 1px solid grey;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+#recently-played {
+  height: 40vh;
+  position: relative;
+  top: 5vh;
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/*The button which when clicked will display queue after a certain width has been reached.*/
+.show-left {
+  opacity: 0.5;
+  background-color: white;
+  color: black;
+  position: absolute;
+  right: -1%;
+  top: 14%;
+  z-index: 4;
+  width: 70px;
+  font-size: 20px;
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  display: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.show-left:hover {
+  background-color: lightgrey;
+}
+
+@media screen and (max-width:880px) {
+  .show-left {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/*Bottom Music Player*/
+#bottom-player {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  height: 80px;
+  border-color: #3d464d;
+  border-radius: .25rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.95;
+  -webkit-box-shadow: 0 -2px 12px rgb(40 47 54 / 11%);
+  box-shadow: 0 -2px 12px rgb(40 47 54 / 11%);
+  visibility: hidden;
+}
+
+.song-description {
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.song-description-image {
+  height: 90%;
+  width: 25%;
+}
+
+.song-description-name {
+  text-align: center;
+  color: white;
+  width: 45%;
+  font-family: 'Padauk', sans-serif;
+}
+
+.main-player {
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+
+.slider {
+  outline: none;
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.extras {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.volume-slider {
+  width: 50%;
+  position: relative;
+  right: 2px;
+}
+
+/*When the hidden checkbox whose labels are the song divs are checked the music player becomes visible.*/
+input[type=checkbox]:checked~#bottom-player {
+  visibility: visible;
+}
+
+/*Player icons change colour to a greyish tone on hovering*/
+.shuffle:hover, .backward:hover, .forward:hover, .replay:hover, .show-queue:hover, .laptop:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+/*The follow option in the artist div actually has a Following word hiddden at the same place.*/
+.hide {
+  visibility: hidden;
+}
+
+/*On clicking the word follow it changes to following indicating that the user follows the artist*/
+input[type=checkbox]:checked~.hide {
+  visibility: visible;
+}

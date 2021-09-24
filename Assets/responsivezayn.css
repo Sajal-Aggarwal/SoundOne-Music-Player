@@ -1,0 +1,214 @@
+/*Making the navbar responsive*/
+@media screen and (min-width:1020px) {
+  .player-title {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:1018px) {
+  .user-name {
+    font-size: 1.2rem;
+  }
+
+  .website-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:917px) {
+  .logo {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width:958px) {
+  .user-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:898px) {
+  .user-name {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:830px) {
+  .player-title {
+    width: 29%;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .user {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:672px) {
+  .user {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .notification {
+    display: none;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .player-title {
+    width: 45%;
+  }
+
+  .logo {
+    height: 78px;
+    width: 66px;
+  }
+
+  .website-name {
+    font-size: 0.8rem;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .searchbar {
+    height: 25px;
+  }
+
+  .profile {
+    display: none;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .section-1 {
+    width: 100%;
+  }
+}
+
+/*Making the bottom music player responsive*/
+@media screen and (max-width:960px) {
+  .laptop {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .show-queue {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .shuffle {
+    display: none !important;
+  }
+
+  .forward {
+    display: none !important;
+  }
+
+  .backward {
+    display: none !important;
+  }
+
+  .replay {
+    display: none !important;
+  }
+
+  .controls {
+    width: 20%;
+  }
+
+  .extras {
+    width: 22%;
+  }
+
+  .song-description-name {
+    width: 13%;
+  }
+
+  .song-description-image {
+    height: 84%;
+    width: 68%;
+  }
+}
+
+/*Making artist info-section responsive*/
+@media screen and (max-width:1150px) {
+  .zayn-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width:615px) {
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .zayn-text {
+    top: 27%;
+  }
+}
+
+@media screen and (max-width:496px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .zayn-text {
+    font-size: 0.8rem;
+  }
+
+  .play-now {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .zayn-text {
+    font-size: 0.6rem;
+  }
+
+  .zayn-malik {
+    height: 37%;
+  }
+
+  .play-now, .general {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .zayn-text {
+    font-size: 0.55rem;
+  }
+
+  .zayn-malik {
+    height: 45%;
+  }
+
+  .play-now, .general {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .song-numbers, .song-name {
+    font-size: 0.8rem;
+  }
+}

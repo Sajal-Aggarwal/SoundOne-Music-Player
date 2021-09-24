@@ -1,0 +1,243 @@
+/*Making the bottom music player responsive*/
+@media screen and (max-width:960px) {
+  .laptop {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .show-queue {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .shuffle {
+    display: none !important;
+  }
+
+  .forward {
+    display: none !important;
+  }
+
+  .backward {
+    display: none !important;
+  }
+
+  .replay {
+    display: none !important;
+  }
+
+  .controls {
+    width: 20%;
+  }
+
+  .extras {
+    width: 22%;
+  }
+
+  .song-description-name {
+    width: 13%;
+  }
+
+  .song-description-image {
+    height: 84%;
+    width: 68%;
+  }
+}
+
+/*Making the navbar responsive*/
+@media screen and (min-width:1020px) {
+  .player-title {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:1018px) {
+  .user-name {
+    font-size: 1.2rem;
+  }
+
+  .website-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:917px) {
+  .logo {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width:958px) {
+  .user-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:898px) {
+  .user-name {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:830px) {
+  .player-title {
+    width: 29%;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .user {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:672px) {
+  .user {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .notification {
+    display: none;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .player-title {
+    width: 45%;
+  }
+
+  .logo {
+    height: 78px;
+    width: 66px;
+  }
+
+  .website-name {
+    font-size: 0.8rem;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .searchbar {
+    height: 25px;
+  }
+
+  .profile {
+    display: none;
+  }
+}
+
+/*(320-420px)*/
+@media screen and (max-width:430px) {
+  .player-title {
+    width: 45%;
+  }
+
+  .latest-release-container-title, .popular-artists-container-title, .bollywood-stars-container-title, .latest-container-title, .latest-container-title-hindi {
+    font-size: 1rem;
+  }
+
+  .latest-title {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    height: 78px;
+    width: 66px;
+  }
+
+  .website-name {
+    font-size: 0.8rem;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .searchbar {
+    height: 25px;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .popular-artists-image {
+    height: 103px;
+    width: 103px;
+  }
+
+  .popular-artists-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .popular-artist-name {
+    font-size: 0.8rem;
+  }
+
+  .genre-image {
+    height: 119px;
+    width: 177px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .latest-image, .latest-image-1 {
+    height: 119px;
+    width: 112px;
+  }
+}
+
+/*Adjusting carousel image size*/
+@media screen and (max-width:440px) {
+  .carousel-image {
+    width: 152%;
+    height: 88%;
+    position: relative;
+    top: 5%;
+    left: -9%;
+  }
+}
+
+@media screen and (min-width:1020px) and (min-height:1300px) {
+  .carousel-image {
+    width: 152%;
+    height: 88%;
+    position: relative;
+    top: 5%;
+    left: -9%;
+  }
+}
+
+/*Adjusting height of latest release section as height of page changes.*/
+@media screen and (max-width:768px) {
+  .latest-release {
+    height: 42%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .latest-release {
+    height: 50%;
+  }
+}
+
+@media screen and (max-height:768px) {
+  .latest-release {
+    height: 42%;
+  }
+}
+
+@media screen and (max-height:605px) {
+  .latest-release {
+    height: 50%;
+  }
+}

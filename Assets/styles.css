@@ -1,0 +1,936 @@
+/*Setting the universal properties of the page*/
+/*We have set  all margins and padding values to zero initially so that we can
+ourselves specify those values for all elements and the default values do not
+interfere.*/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgb(14, 16, 37);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*Topmost-portion:Navigation bar*/
+/*The navigation bar has been designed using flex display to support
+responsiveness. The space between the different components has been kept equal.*/
+.navigation-bar {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*First subdiv-name and logo of player*/
+.player-title {
+  position: relative;
+  left: 3%;
+  width: 23%;
+  min-width: 140.5px;
+  min-height: 92px;
+}
+
+/*Logo*/
+.logo {
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*Name*/
+.website-name {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.special {
+  font-family: 'Secular One', sans-serif;
+}
+
+.special-1 {
+  color: rgb(195, 145, 109);
+}
+
+/*Second sub-div: Search bar*/
+.search {
+  display: inline-block;
+  width: 30%;
+  min-width: 156px;
+  min-height: 29px;
+}
+
+/*Search-bar*/
+.searchbar {
+  display: inline-block;
+  width: 93%;
+  height: 35px;
+  background-color: rgb(20, 25, 60);
+  border-radius: 18px;
+  border: 1px solid rgb(20, 25, 60);
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/*Mic-icon(voice search) div*/
+.mic-icon {
+  display: inline-block;
+  position: relative;
+  width: min-content;
+  right: 0%;
+  top: 10%;
+  transition: all ease-in-out 0.1s;
+}
+
+/*Mic icon*/
+.mic {
+  left: -25px;
+  top: -12px;
+  color: white;
+  position: absolute;
+}
+
+/*Third sub-div: Notifications*/
+.notification {
+  display: inline-block;
+  width: 1%;
+}
+
+/*Notification-bell-icon*/
+.bell {
+  color: white;
+  font-size: 30px;
+}
+
+/*Fourth sub-div: User*/
+.user {
+  display: inline-block;
+  width: 20%;
+}
+
+/*User-Name*/
+.user-name {
+  vertical-align: middle;
+  font-size: 1.3rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+}
+
+/*User-profile-picture*/
+.profile {
+  height: 35px;
+  width: 34px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+/*End of fourth-subdiv*/
+/*!!!!!!!End of navigation bar!!!!!!!!!*/
+/*Beginning of Aside section-1*/
+.section-1 {
+  width: 70%;
+  display: inline-block;
+  height: 90vh;
+}
+
+/*Home Screen Carousel*/
+/*Carousel-container div*/
+.container {
+  width: 75%;
+  max-width: 800px;
+  max-height: 600px;
+  min-height: 198px;
+  height: 40%;
+  position: relative;
+  left: 8%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  user-select: none;
+}
+
+/*For the purpose of making the pictures move and creating the carousel effect
+we have made use of radio inputs. The display has been set to none and the
+carousel images act as their labels.*/
+input[type=radio] {
+  display: none;
+}
+
+/*Subdiv containing the carousel images*/
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*The class created for label which links images to radio inputs.*/
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  cursor: pointer;
+}
+
+/*General image settings for entire page which can be overwritten by any
+subsequent CSS commands as per our requirements for different images.*/
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*Carousel images*/
+.carousel-image {
+  width: 122%;
+  height: 100%;
+  right: 18px;
+  min-height: 163px;
+}
+
+/*Implementing the functionality of the carousel using checked pseudo class, css
+selectors and transform property*/
+#item-1:checked~.cards #song-3, #item-2:checked~.cards #song-1, #item-3:checked~.cards #song-2 {
+  -webkit-transform: translatex(-40%) scale(0.8);
+  transform: translatex(-40%) scale(0.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #song-2, #item-2:checked~.cards #song-3, #item-3:checked~.cards #song-1 {
+  -webkit-transform: translatex(40%) scale(0.8);
+  transform: translatex(40%) scale(0.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #song-1, #item-2:checked~.cards #song-2, #item-3:checked~.cards #song-3 {
+  -webkit-transform: translatex(0) scale(1);
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#item-1:checked~.cards #song-1 img, #item-2:checked~.cards #song-2 img, #item-3:checked~.cards #song-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+#item-2:checked~.player #test {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#item-2:checked~.player #test {
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
+#item-3:checked~.player #test {
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
+}
+
+/*Latest Releases Section*/
+/*Heading*/
+.latest-release-container-title {
+  color: white;
+  position: relative;
+  left: 6%;
+  font-size: 1.3rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*Container div with all songs*/
+.latest-release {
+  width: 90%;
+  max-width: 980px;
+  max-height: 600px;
+  min-height: 256px;
+  height: 33%;
+  position: relative;
+  left: 4%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 29px;
+}
+
+/*Div for each song. The div for each song's information is itself a flex div
+and the container div for all songs is also a flex div.*/
+.latest-card {
+  display: flex;
+}
+
+/*Div for the dropdown menu associated with each song*/
+/*Each song has an ellipsis shaped icon on the right which when hovered upon will display a dropdown menu*/
+.dropdown-1 {
+  display: inline-block;
+  position: relative;
+  left: 87%;
+  top: 0;
+}
+
+/*Style settings for the ellipsis dropdown button*/
+.dropdown-button {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/*Style settings for dropdown menu containing the three anchor tags for directing to other sites*/
+/*Initially the display has been set to none*/
+.dropdown-content-1 {
+  position: absolute;
+  background-color: rgb(242, 242, 242);
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  left: auto !important;
+  right: 10%;
+  opacity: 0.95;
+  bottom: -2%;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  color: grey;
+  display: none;
+  border: 1px solid black;
+}
+
+/*The content becomes visible on hovering as display changes from none to block.*/
+.dropdown-1:hover .dropdown-content-1 {
+  display: block;
+}
+
+/*Style settings for the anchor tags in thye content of dropdown menu*/
+.dropdown-content-1 a {
+  color: black;
+  padding: 1px 10px;
+  text-decoration: none;
+  display: block;
+  border: 0.5px solid grey;
+}
+
+/*On hovering over a particular option the bg color changes indicating the
+selection of that option*/
+.dropdown-content-1 a:hover {
+  background-color: lightgrey;
+}
+
+/*Images for the latest release section*/
+.fav-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 0;
+  margin: 3px;
+}
+
+.fav-img:hover {
+  cursor: pointer;
+}
+
+/*The caption related to each song*/
+.latest-title {
+  font-size: 1.1rem;
+  color: white;
+  margin: auto;
+  margin-left: 15px;
+  font-family: 'Padauk', sans-serif;
+}
+
+/*Popular artists section*/
+/*Heding*/
+.popular-artists-container-title {
+  color: white;
+  position: relative;
+  left: 6%;
+  font-size: 1.3rem;
+  top: 4%;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*Container div*/
+.popular-artists {
+  display: flex;
+  position: relative;
+  left: 6%;
+  top: 5%;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 134%;
+  justify-content: space-between;
+}
+
+/*Flex-card for each artist*/
+.popular-artist-card {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  text-align: center;
+}
+
+/*Name tag for each artist*/
+.popular-artist-name {
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  font-family: 'Padauk', sans-serif;
+  font-size: 1.1rem;
+}
+
+/*Image styling*/
+.popular-artists-image {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  margin: 20px;
+  transition: transform 1s;
+}
+
+/*Play icon positioned in center of images with initial opacity 0*/
+.play-circular {
+  position: absolute;
+  top: 42%;
+  left: 49%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: white;
+}
+
+.popular-artists-image:hover {
+  cursor: pointer;
+  filter: brightness(0.4);
+  box-shadow: 0 0 12px #08080a;
+}
+
+/*Play icon becomes visible on hovering in the centre*/
+.play-circular:hover {
+  visibility: visible;
+  cursor: pointer;
+}
+
+/*Radios section*/
+/*Container div*/
+#radios {
+  display: flex;
+  position: relative;
+  left: 6%;
+  top: 8%;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 132%;
+  justify-content: space-between;
+  background-color: rgb(18, 22, 63);
+  height: 140px;
+}
+
+/*Flex div for each radio*/
+.radio-card {
+  position: relative;
+  text-align: center;
+}
+
+/*Image with radios title*/
+.radio-stations {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+/*Radio-images*/
+.radio-image {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  opacity: 0.6;
+}
+
+/*Name tag of radio*/
+.radio-name-tag {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*The brightness reduces on hovering over image leading to the title becoming
+more prominently visible.*/
+.radio-image:hover {
+  filter: brightness(0.2);
+  box-shadow: 0 0 12px #0e1115;
+  cursor: pointer;
+}
+
+.radio-name-tag:hover {
+  cursor: pointer;
+}
+
+/*Music genres*/
+/*Container div*/
+#genres {
+  display: flex;
+  position: relative;
+  left: 4.5%;
+  top: 9%;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 132%;
+  height: auto;
+}
+
+.genre-card {
+  position: relative;
+  text-align: center;
+}
+
+.genre-image {
+  border-radius: 0;
+  height: 160px;
+  width: 270px;
+  margin: 20px;
+  opacity: 0.6;
+}
+
+.genre-image:hover {
+  box-shadow: 0 0 10px #060606;
+  cursor: pointer;
+  filter: brightness(0.2);
+}
+
+/*For name tag same class as radio-name-tag has been used.*/
+/*End of genres*/
+/*Latest English SOngs*/
+/*Heading*/
+.latest-container-title {
+  color: white;
+  position: relative;
+  left: 6%;
+  top: 10%;
+  font-size: 1.3rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*Container Div*/
+#latest-songs {
+  display: flex;
+  position: relative;
+  left: 6%;
+  top: 9%;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 132%;
+  justify-content: space-between;
+}
+
+/*The same div popular-artist-card has been used for the cards.*/
+/*Image styles*/
+.latest-image {
+  border-radius: 0;
+  height: 150px;
+  width: 130px;
+  margin: 25px 10px 10px 10px;
+}
+
+/*Play icon*/
+/*The play icon initially has hidden visibility. On hovering over image, the play icon becomes
+visible and the brightness of the image decreases.*/
+.play {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: white;
+}
+
+/*For names the earlier created class for artists has been used.*/
+/*End of Trending in English.*/
+.latest-container-title-hindi {
+  color: white;
+  position: relative;
+  left: 6%;
+  top: 12%;
+  font-size: 1.3rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.hindi {
+  top: 12%;
+}
+
+/*Additional class applied to only first image in row*/
+.margin-left-1 {
+  margin-left: 1px;
+}
+
+.latest-image:hover {
+  box-shadow: 0 0 12px #08080a;
+  filter: brightness(0.4);
+}
+
+#bollywood-stars {
+  display: flex;
+  position: relative;
+  left: 6%;
+  top: 12%;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 134%;
+  justify-content: space-between;
+}
+
+.bollywood-stars-container-title {
+  color: white;
+  position: relative;
+  font-size: 1.3rem;
+  top: 12%;
+  left: 6%;
+  font-family: 'Roboto Slab', serif;
+}
+
+.latest-image:hover {
+  cursor: pointer;
+}
+
+.latest-image:hover~.play {
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  background: transparent;
+}
+
+.play:hover {
+  visibility: visible;
+  cursor: pointer;
+}
+
+/*End of aside section-1*/
+/*Aside Section-2*/
+.section-2 {
+  width: 28%;
+  display: inline-block;
+  height: 90vh;
+  overflow: hidden;
+  vertical-align: top;
+  border-radius: 10px;
+}
+
+#queue {
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 77vh;
+}
+
+.queue-title {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.queue-song {
+  display: flex;
+  margin: 12px;
+  position: relative;
+  top: -5%;
+}
+
+.queue-numbers {
+  color: white;
+  margin-top: 40px;
+  margin-right: 11px;
+  font-family: 'Playfair Display', serif;
+}
+
+.queue-image {
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+}
+
+.queue-image:hover {
+  cursor: pointer;
+}
+
+.queue-song-names {
+  color: white;
+  margin-top: 29px;
+  margin-left: 16px;
+  font-weight: bolder;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+.queue-singer {
+  color: white;
+  margin: auto;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.like-icon {
+  color: white;
+  position: absolute;
+  left: 90%;
+  top: 63%;
+}
+
+.like-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  left: 87%;
+  top: -7%;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: rgb(242, 242, 242);
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  left: auto !important;
+  right: 95%;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  color: grey;
+  display: none;
+  opacity: 0.95;
+  border: 1px solid grey;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type=checkbox]:checked~#bottom-player {
+  visibility: visible;
+}
+
+.show-left {
+  background-color: white;
+  color: black;
+  position: absolute;
+  right: -1%;
+  top: 14%;
+  z-index: 4;
+  width: 70px;
+  font-size: 20px;
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  display: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.show-left:hover {
+  background-color: lightgrey;
+}
+
+a {
+  display: block;
+}
+
+.option-list {
+  height: 20%;
+  padding: 2px 10px;
+}
+
+/*Bottom Music Player*/
+#bottom-player {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  height: 80px;
+  border-color: #3d464d;
+  border-radius: .25rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.95;
+  -webkit-box-shadow: 0 -2px 12px rgb(40 47 54 / 11%);
+  box-shadow: 0 -2px 12px rgb(40 47 54 / 11%);
+  visibility: hidden;
+}
+
+.song-description {
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.song-description-image {
+  height: 90%;
+  width: 25%;
+}
+
+.song-description-name {
+  text-align: center;
+  color: white;
+  width: 45%;
+  font-family: 'Padauk', sans-serif;
+}
+
+.main-player {
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+
+.slider {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.extras {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.volume-slider {
+  width: 50%;
+  position: relative;
+  right: 2px;
+}
+
+.shuffle:hover, .backward:hover, .forward:hover, .replay:hover, .show-queue:hover, .laptop:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+/*End of player*/
+/*The play button is initially hidden*/
+.music-label {
+  visibility: hidden;
+}
+
+/*The play button becomes visible on hovering over the image*/
+.popular-artists-image:hover~.music-label {
+  visibility: visible;
+}
+
+.latest-image:hover~.music-label {
+  visibility: visible;
+}
+
+@media screen and (max-width:880px) {
+  .show-left {
+    display: block;
+    cursor: pointer;
+  }
+}

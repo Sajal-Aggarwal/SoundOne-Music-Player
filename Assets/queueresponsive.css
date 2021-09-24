@@ -1,0 +1,61 @@
+/*On reduction of screen width beyond 880px the queue disappears and the section-1 begins to occupy
+100% width of screen.
+To access the queue a button titled queue becomes visible which on clicking
+will display the queue.
+Clicking the button again makes the queue hidden once again*/
+@media screen and (max-width:880px) {
+  .section-2 {
+    visibility: hidden;
+  }
+
+  .container {
+    width: 113%;
+  }
+
+  .latest-release {
+    width: 127%;
+  }
+}
+
+/*The width occupied by queue on expanding on pressing the button has been adjusted according
+to screen size so that it is clearly visible with no overlapping contents.*/
+@media screen and (max-width: 880px) {
+  input[type=checkbox]:checked~.section-2 {
+    visibility: visible;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    opacity: 0.9;
+    top: 18%;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .section-2 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  input[type=checkbox]:checked~.section-2 {
+    width: 83%;
+  }
+}
